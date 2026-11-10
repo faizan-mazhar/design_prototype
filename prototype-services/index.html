@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Physical AI, Video AI, AI agents and OT security · applyd.ai</title>
+  <meta name="description" content="applyd.ai builds Physical AI, Video AI, AI agents, OT security and custom AI. Each project starts on one asset or one workflow and is tested on your data.">
+  <link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
+  <link rel="preload" href="../assets/fonts/hanken.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/hanken-italic.woff2" as="font" type="font/woff2" crossorigin>
+  <script>
+    // Scroll scenes are opt-in: without JS, or with reduced motion, the page stays a plain document.
+    if (matchMedia('(prefers-reduced-motion: no-preference)').matches) document.documentElement.classList.add('motion');
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="magic.css">
+  <link rel="stylesheet" href="services.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="arrow" viewBox="0 0 16 16"><path d="M1 8h13M9 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.2"/></symbol>
+  <symbol id="arrow-ne" viewBox="0 0 16 16"><path d="M4 12l8-8M5 4h7v7" fill="none" stroke="currentColor" stroke-width="1.2"/></symbol>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" data-tone="light">
+  <nav class="nav__bar" aria-label="Main">
+    <a class="nav__logo" href="#top" aria-label="applyd.ai home"><img src="../assets/logo.svg" alt="" width="28" height="28"><span>pplyd.ai</span></a>
+    <div class="nav__links" id="nav-links">
+      <div class="nav__group"><button class="nav__trigger" type="button" aria-expanded="false" aria-controls="menu-solutions">Solutions</button><div class="nav__menu nav__menu--solutions" id="menu-solutions"><a href="ai-physical-ai.html"><b>Physical AI</b><span>Equipment data read against normal behaviour, flagged for your engineers.</span></a><a href="ai-video-ai.html"><b>Video AI</b><span>Vision agents that watch your cameras and explain what is happening.</span></a><a href="platform.html"><b>AI Agents</b><span>Inbound conversations answered, qualified and handed to the right person.</span></a><a href="ai-ot-cybersecurity.html"><b>OT Security</b><span>A service to understand, strengthen and prepare the systems behind industrial operations.</span></a><a href="ai.html"><b>AI Development</b><span>Custom AI built and tested on your own processes and data.</span></a></div></div>
+      <div class="nav__group"><button class="nav__trigger" type="button" aria-expanded="false" aria-controls="menu-industries">Industries</button><div class="nav__menu nav__menu--industries" id="menu-industries"><a href="industrial-oil-gas.html"><b>Oil &amp; gas</b><span>Process areas, pumps and compressors</span></a><a href="industrial-chemical-plants.html"><b>Chemical plants</b><span>Restricted zones, reactors and heat exchangers</span></a><a href="industrial-pharmaceuticals.html"><b>Pharmaceuticals</b><span>Controlled areas, utilities and HVAC</span></a><a href="industrial-power-generation.html"><b>Power generation</b><span>Turbine halls, cooling and rotating plant</span></a><a href="industries-saas.html"><b>SaaS</b><span>Demo requests and trial follow-up</span></a><a href="industries-financial-services.html"><b>Financial services</b><span>Client onboarding and document chasing</span></a><a href="industries-insurance.html"><b>Insurance</b><span>Quote intake and out-of-hours claim reporting</span></a><a href="industries-healthcare.html"><b>Healthcare</b><span>Patient booking, rescheduling and reminders</span></a><a href="industries-telecom.html"><b>Telecom</b><span>Coverage checks and customer retention</span></a><a href="industries-logistics.html"><b>Logistics</b><span>Freight quote requests and shipment status</span></a><a href="industries-real-estate.html"><b>Real estate</b><span>Viewing booking and buyer or tenant qualifying</span></a><a href="industries-retail.html"><b>Retail and e-commerce</b><span>Order support, returns and product questions</span></a><a href="industries-travel-hospitality.html"><b>Travel and hospitality</b><span>Group, event and corporate booking requests</span></a><a href="industries-wealth-management.html"><b>Wealth management</b><span>Prospect qualifying and client review meetings</span></a><a href="industries-health-insurance.html"><b>Health insurance</b><span>Member questions and employer scheme quotes</span></a><a href="industries-life-sciences.html"><b>Life sciences</b><span>Sample and distributor requests routed by territory</span></a><a href="industries-education.html"><b>Education</b><span>Open days, applications and enrolment questions</span></a><a href="industries-legal.html"><b>Legal</b><span>Client intake and conflict-check details</span></a><a href="industries-automotive-dealers.html"><b>Car and van dealers</b><span>Test drives, part-exchange details and service booking</span></a><a href="industries-home-services.html"><b>Home services and installers</b><span>Site surveys, job details and photos for quotes</span></a><a class="nav__all" href="industries.html">All industries</a></div></div>
+      <a href="how-it-works.html">How we work</a>
+      <a href="resources.html">Resources</a>
+      <a href="#company">Company</a>
+    </div>
+    <a class="nav__cta" href="#demo">Book a demo <svg width="16" height="16" aria-hidden="true"><use href="#arrow"/></svg></a>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menu"><span></span><span></span></button>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- 1 · Hero: the canvas frame recedes into a deck of five service cards, dealt one per scroll step -->
+  <section class="pin hero" id="top" style="--pin:6.4">
+    <span class="anchor" id="services"></span>
+    <div class="pin__stage hero__stage">
+      <div class="hero__inner">
+        <div class="hero__dark" aria-hidden="true"></div>
+
+        <div class="scene" aria-hidden="true">
+          <div class="stack">
+            <div class="panel"><img data-src="../assets/img/pages/ai-agent-development.webp" alt=""><svg class="routes"></svg><span class="panel__tag">AI development</span></div>
+            <div class="panel"><img data-src="../assets/img/industrial/ot-hero.webp" alt=""><svg class="routes"></svg><span class="panel__tag">OT security</span></div>
+            <div class="panel"><img data-src="../assets/img/card-capture.webp" alt=""><svg class="routes"></svg><span class="panel__tag">AI agents</span></div>
+            <div class="panel"><img data-src="../assets/img/industrial/video-ai-hero-poster.webp" alt=""><svg class="routes"></svg><span class="panel__tag">Video AI</span></div>
+            <div class="panel"><img data-src="../assets/img/industrial/industrial-hero.webp" alt=""><svg class="routes"></svg><span class="panel__tag">Physical AI</span></div>
+            <div class="frame">
+              <canvas class="hero__field" aria-hidden="true"></canvas>
+              <div class="frame__shade"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__copy">
+          <h1 id="hero-title">AI for plants, cameras, control networks and <em>inbound conversations.</em></h1>
+          <p class="hero__lead">Five services. You choose the starting point: a pump, a camera feed, an enquiry queue or a document set. We test there before anything widens.</p>
+          <div class="btns">
+            <a class="btn btn--light" data-shimmer href="#demo">Book a demo <svg width="16" height="16" aria-hidden="true"><use href="#arrow"/></svg></a>
+            <a class="btn btn--ghost" href="#services">See the five services <svg width="16" height="16" aria-hidden="true"><use href="#arrow"/></svg></a>
+          </div>
+        </div>
+
+        <div class="stages">
+          <p class="stages__intro">Five services. Each starts on one asset or one workflow.</p>
+          <ol class="rail" aria-hidden="true"><li class="rail__step"><span>01</span><i class="rail__track"><i class="rail__fill"></i></i></li><li class="rail__step"><span>02</span><i class="rail__track"><i class="rail__fill"></i></i></li><li class="rail__step"><span>03</span><i class="rail__track"><i class="rail__fill"></i></i></li><li class="rail__step"><span>04</span><i class="rail__track"><i class="rail__fill"></i></i></li><li class="rail__step"><span>05</span><i class="rail__track"><i class="rail__fill"></i></i></li></ol>
+          <ol class="stages__list">
+            <li class="stage" data-i="0">
+              <p class="eyebrow">01 · Physical AI</p>
+              <h2>Know which equipment needs attention first.</h2>
+              <p class="stage__body">Reads vibration, current, temperature, pressure and flow against how each asset normally behaves, and flags drift for your maintenance team.</p>
+              <div class="takeover"><p><b>Example</b> Bearing vibration +38% vs baseline. Possible cause, engineer to check.</p><a class="link" href="ai-physical-ai.html">Explore Physical AI <svg width="16" height="16" aria-hidden="true"><use href="#arrow"/></svg></a></div>
+            </li>
+            <li class="stage" data-i="1">
+              <p class="eyebrow">02 · Video AI</p>
+              <h2>Turn existing cameras into alerts that matter.</h2>
+              <p class="stage__body">Watches IP cameras and NVRs for the events your site defines, such as restricted-area entry, and sends each alert to its owner.</p>
+              <div class="takeover"><p><b>Example</b> Person entering restricted zone · Cam 04 · 14:02</p><a class="link" href="ai-video-ai.html">Explore Video AI <svg width="16" height="16" aria-hidden="true"><use href="#arrow"/></svg></a></div>
+            </li>
+            <li class="stage" data-i="2">
+              <p class="eyebrow">03 · AI agents</p>
+              <h2>Handle every inbound conversation, then hand off.</h2>
+              <p class="stage__body">Picks up enquiries, bookings, orders and claims on email, chat, SMS, WhatsApp and voice, under hand-off rules your team writes.</p>
+              <div class="takeover"><p><b>Example</b> Reply asks about volume pricing. Rule matched: pricing goes to the account owner.</p><a class="link" href="platform.html">Explore AI agents <svg width="16" height="16" aria-hidden="true"><use href="#arrow"/></svg></a></div>
+            </li>
+            <li class="stage" data-i="3">
+              <p class="eyebrow">04 · OT security</p>
+              <h2>See what is connected to your control network.</h2>
+              <p class="stage__body">Passive asset discovery, remote access review and segmentation, structured around IEC 62443, NIST SP 800-82 and the NCSC CAF.</p>
+              <div class="takeover"><p><b>Example</b> PLC-12 · Cell 3 · Seen via passive · New remote session</p><a class="link" href="ai-ot-cybersecurity.html">Explore OT security <svg width="16" height="16" aria-hidden="true"><use href="#arrow"/></svg></a></div>
+            </li>
+            <li class="stage" data-i="4">
+              <p class="eyebrow">05 · AI development</p>
+              <h2>Custom AI built around your own processes.</h2>
+              <p class="stage__body">Agents, generative AI, LLM integration and RAG, tested on your data before launch.</p>
+              <div class="takeover"><p><b>Example</b> Which seal fits pump P-204? The mechanical seal specified in section 4.2.</p><a class="link" href="ai.html">Explore AI development <svg width="16" height="16" aria-hidden="true"><use href="#arrow"/></svg></a></div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 · AI agents: the product behind service three -->
+  <section class="pin sheet band" id="agents" data-nav="dark" style="--pin:2.9;--z:2">
+    <div class="pin__stage band__stage">
+      <img class="band__img" src="../assets/img/band-neon.webp" alt="" loading="lazy">
+      <div class="band__shade" aria-hidden="true"></div>
+      <div class="band__content">
+        <h2 class="band__title" data-split aria-label="Capture, qualify, follow up, book, sync.">Capture.<br><em>Qualify.</em><br><em>Follow up.</em><br><em>Book.</em><br><em>Sync.</em></h2>
+        <div class="band__panel" data-rise>
+          <p>Five stages of one agent product, working email, SMS, WhatsApp, voice, chat and web forms. Each stage has its own written rule for when a person takes over.</p>
+          <a class="btn btn--ghost" href="how-it-works.html">See how it works <svg width="16" height="16" aria-hidden="true"><use href="#arrow"/></svg></a>
+        </div>
+      </div>
+      <div class="dim" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- 3 · Proof: green record card, scrubbed step by step -->
+  <section class="pin sheet proof" id="proof" data-nav="dark" style="--pin:3.8;--z:3">
+    <div class="pin__stage proof__stage">
+      <div class="proof__inner">
+        <div class="proof__media" aria-hidden="true">
+          <img src="../assets/img/pages/speed-to-lead-v2.webp" alt="" loading="lazy">
+          <img src="../assets/img/pages/how-it-works-v3.webp" alt="" loading="lazy">
+          <img src="../assets/img/pages/handoff-rules.webp" alt="" loading="lazy">
+          <img src="../assets/img/demo-video-call.webp" alt="" loading="lazy">
+        </div>
+        <div class="proof__card" data-beam>
+          <div><h2 class="proof__title">One conversation, start to finish. <em>Every step on the record.</em></h2><ul class="proof__points"><li>Each step is logged with the rule that allowed it.</li><li>A person sees the whole history before the first call.</li></ul></div>
+          <div class="record">
+            <div class="record__head">
+              <div><strong>Sara Malik</strong> · Northwind Freight<br><span class="mono">Fit score 82/100</span></div>
+              <span class="pill pill--done">Meeting booked</span>
+            </div>
+            <ol class="record__rows">
+              <li data-tone="agent"><div><b>Agent captured the lead</b><span>De-duplicated and enriched with company size and region.</span></div><time>09:02</time></li>
+              <li data-tone="agent"><div><b>Agent qualified it</b><span>Matched 4 of 5 fit rules and asked about timeline by email.</span></div><time>09:03</time></li>
+              <li data-tone="human"><div><b>Handed to a rep</b><span>Sara asked about volume pricing, which your rules reserve for a person.</span></div><time>09:41</time></li>
+              <li data-tone="done"><div><b>Rep booked the meeting</b><span>Thursday 15:00, with a call brief written by the agent.</span></div><time>10:15</time></li>
+            </ol>
+            <div class="record__foot"><p class="record__note">Example record. Names and times are illustrative.</p><a class="link" href="how-it-works.html#replay">Watch the replay <svg width="16" height="16" aria-hidden="true"><use href="#arrow"/></svg></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 · Industries: photos orbit the headline on a timer -->
+  <section class="pin sheet ind" id="industries" data-nav="light" style="--pin:2.6;--z:4">
+    <div class="pin__stage ind__stage">
+      <div class="tiles">
+        <a class="tile" href="industrial-oil-gas.html" aria-label="Oil &amp; gas"><span class="fly"><span class="in"><img src="../assets/img/industries/oil-gas.webp" alt="" loading="lazy"></span></span></a>
+        <a class="tile" href="industrial-chemical-plants.html" aria-label="Chemical plants"><span class="fly"><span class="in"><img src="../assets/img/industries/chemical-plants.webp" alt="" loading="lazy"></span></span></a>
+        <a class="tile" href="industrial-power-generation.html" aria-label="Power generation"><span class="fly"><span class="in"><img src="../assets/img/industries/power-generation.webp" alt="" loading="lazy"></span></span></a>
+        <a class="tile" href="industries-healthcare.html" aria-label="Healthcare"><span class="fly"><span class="in"><img src="../assets/img/industries/healthcare.webp" alt="" loading="lazy"></span></span></a>
+        <a class="tile" href="industries-saas.html" aria-label="SaaS"><span class="fly"><span class="in"><img src="../assets/img/industries/saas.webp" alt="" loading="lazy"></span></span></a>
+        <a class="tile" href="industries-logistics.html" aria-label="Logistics"><span class="fly"><span class="in"><img src="../assets/img/industries/logistics-v2.webp" alt="" loading="lazy"></span></span></a>
+        <a class="tile" href="industries-financial-services.html" aria-label="Financial services"><span class="fly"><span class="in"><img src="../assets/img/industries/financial-services-v2.webp" alt="" loading="lazy"></span></span></a>
+        <a class="tile" href="industries-insurance.html" aria-label="Insurance"><span class="fly"><span class="in"><img src="../assets/img/industries/insurance.webp" alt="" loading="lazy"></span></span></a>
+        <a class="tile" href="industries-real-estate.html" aria-label="Real estate"><span class="fly"><span class="in"><img src="../assets/img/industries/real-estate-v2.webp" alt="" loading="lazy"></span></span></a>
+        <a class="tile" href="industries-telecom.html" aria-label="Telecom"><span class="fly"><span class="in"><img src="../assets/img/industries/telecom-v2.webp" alt="" loading="lazy"></span></span></a>
+        <a class="tile" href="industries-legal.html" aria-label="Legal"><span class="fly"><span class="in"><img src="../assets/img/industries/legal.webp" alt="" loading="lazy"></span></span></a>
+        <a class="tile" href="industries-education.html" aria-label="Education"><span class="fly"><span class="in"><img src="../assets/img/industries/education-v2.webp" alt="" loading="lazy"></span></span></a>
+      </div>
+
+      <div class="ind__center">
+        <h2 class="ind__title" aria-label="AI for every industry">
+          <span aria-hidden="true">AI for</span>
+          <span class="rotor" aria-hidden="true">
+            <span class="rotor__static">every industry</span>
+            <span class="rotor__w">Oil &amp; gas</span><span class="rotor__w">Chemical plants</span><span class="rotor__w">Power generation</span><span class="rotor__w">Healthcare</span><span class="rotor__w">SaaS</span><span class="rotor__w">Logistics</span><span class="rotor__w">Financial services</span><span class="rotor__w">Insurance</span><span class="rotor__w">Real estate</span><span class="rotor__w">Telecom</span><span class="rotor__w">Legal</span><span class="rotor__w">Education</span>
+          </span>
+        </h2>
+        <p class="ind__job" aria-live="off" data-jobs='["Restricted process areas and pumps and compressors that wear over time.", "Configured production zones, reactors and heat exchangers where one reading rarely tells the story.", "Turbine halls, cooling systems and rotating plant.", "Patient booking, rescheduling and reminders, with written hand-off rules.", "Demo requests and trial follow-up, with written hand-off rules.", "Freight quote requests and shipment status, with written hand-off rules.", "Client onboarding and document chasing.", "Quote intake and out-of-hours claim reporting.", "Viewing booking and buyer or tenant qualifying.", "Coverage checks and customer retention.", "Client intake and conflict-check details.", "Open days, applications and enrolment questions."]' data-events='["14:02 \u00b7 Person enters a restricted process area \u00b7 Cam 04 \u00b7 Sent to: Shift supervisor", "03:40 \u00b7 Heat exchanger outlet temperature drifting from baseline \u00b7 Sent to: Process engineer", "11:15 \u00b7 Bearing vibration above baseline on a cooling pump \u00b7 Sent to: Maintenance lead", "08:20 \u00b7 Patient asks about a symptom while rescheduling \u00b7 Sent to: Clinic staff", "09:38 \u00b7 Trial user asks about volume pricing \u00b7 Sent to: Account owner", "10:05 \u00b7 Customer reports a damaged shipment and asks for a claim \u00b7 Sent to: Claims handler", "", "", "", "", "", ""]'>Restricted process areas and pumps and compressors that wear over time.</p>
+        <p class="ind__event">14:02 · Person enters a restricted process area · Cam 04 · Sent to: Shift supervisor</p>
+        <a class="btn btn--dark" href="industries.html">All 20 industries <svg width="16" height="16" aria-hidden="true"><use href="#arrow"/></svg></a>
+      </div>
+      <div class="dim" aria-hidden="true"></div>
+    </div>
+  </section>
+
+
+  <div class="flow">
+    <!-- Magic UI: Text Reveal -->
+    <section class="treveal" data-nav="light">
+      <div class="treveal__sticky">
+        <p>Agents never negotiate, discount or commit unless a rule allows it. Your team writes the rules before launch and can change them at any time.</p>
+      </div>
+    </section>
+
+    <!-- Magic UI: Animated Beam -->
+    <section class="sec channels" id="channels" data-nav="light">
+      <div class="wrap">
+        <div class="channels__head">
+          <h2 class="h2" data-split>Every inbound conversation <em>on every channel</em></h2>
+          <p class="lead" data-rise>Every channel writes to one record, so your team never has to ask the same question twice.</p>
+        </div>
+        <div class="beams">
+          <svg class="beams__svg" aria-hidden="true"></svg>
+          <div class="beams__col" data-in>
+<div class="node"><span class="node__box"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></span>Web forms</div>
+<div class="node"><span class="node__box"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v11H9l-4 4v-4H3z"/></svg></span>Site chat</div>
+<div class="node"><span class="node__box"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zM3 7l9 7 9-7"/></svg></span>Email</div>
+<div class="node"><span class="node__box"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v13H9l-5 4zM8 9h8M8 12.5h5"/></svg></span>SMS</div>
+<div class="node"><span class="node__box"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3z"/></svg></span>WhatsApp</div>
+<div class="node"><span class="node__box"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3l3.5 1 1 4.5-2 1.5a12 12 0 0 0 6 6l1.5-2 4.5 1 1 3.5c-1 1.5-2.5 2-4 1.7C10 19 5 14 3.8 7c-.3-1.5.7-3 2.2-4z"/></svg></span>Voice</div>
+          </div>
+          <div class="hub">
+            <article class="hub__box">
+              <header class="hub__head"><img src="../assets/logo.svg" alt="" width="20" height="20"><span>One record</span></header>
+              <div class="hub__who"><strong>Sara Malik</strong><span>Northwind Freight</span></div>
+              <ol class="hub__log" data-touches='[["Web form", "Requested a demo"], ["Site chat", "Asked about onboarding"], ["Email", "Sent company details"], ["SMS", "Confirmed a time"], ["WhatsApp", "Asked about timeline"], ["Voice", "Left a callback note"]]'><li><span>Email</span><span>Sent company details</span></li><li><span>Site chat</span><span>Asked about onboarding</span></li><li><span>Web form</span><span>Requested a demo</span></li></ol>
+              <p class="hub__note">Example record</p>
+            </article>
+          </div>
+          <div class="beams__col beams__col--out" data-out>
+<div class="node"><span class="node__box"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6c0-3.5 16-3.5 16 0v12c0 3.5-16 3.5-16 0zM4 6c0 3.5 16 3.5 16 0M4 12c0 3.5 16 3.5 16 0"/></svg></span>CRM</div>
+<div class="node"><span class="node__box"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v14H4zM4 10h16M8 3v5M16 3v5"/></svg></span>Calendar</div>
+<div class="node node--human"><span class="node__box"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-5 4-7 8-7s7 2 8 7"/></svg></span>A person</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 · Hand-off -->
+    <section class="sec" id="control" data-nav="light">
+      <div class="wrap">
+        <div class="handoff__head">
+          <div>
+            <h2 class="h2" data-split>Where a person takes over <em>is written down.</em></h2>
+            <p class="lead" data-rise>Five stages of one agent product. Each stage has its own written rule for when a person takes over.</p>
+          </div>
+          <figure class="rule" data-rise>
+            <div class="rule__top"><span>Hand-off rule · example</span><span>Written by your team</span></div>
+            <p class="rule__if">IF enquiry asks for a discount → hand to named account owner</p>
+            <dl>
+              <div><dt>Agent</dt><dd>stops and sends nothing further</dd></div>
+              <div><dt>Person</dt><dd>account owner, with the full thread</dd></div>
+              <div><dt>Logged</dt><dd>rule, time and who took over</dd></div>
+            </dl>
+            <figcaption>Agents never negotiate, discount or commit unless a rule allows it. Your team writes the rules before launch and can change them at any time.</figcaption>
+          </figure>
+        </div>
+        <ol class="fivesteps">
+          <li data-rise><h3>Capture</h3><p>Every channel lands in one record, matched and enriched.</p><span class="mono">09:02 · matched, enriched</span></li>
+          <li data-rise><h3>Qualify</h3><p>Asks your questions and scores the answers against your fit rules.</p><span class="mono">09:03 · 4 of 5 rules met</span></li>
+          <li data-rise><h3>Follow up</h3><p>Email, SMS, WhatsApp and voice, from messages you approved.</p><span class="mono">09:03 · email sent</span></li>
+          <li data-rise><h3>Book</h3><p>Offers the rep's open slots and books the meeting.</p><span class="mono">10:15 · Thu 15:00</span></li>
+          <li data-rise><h3>Sync</h3><p>Writes to your CRM both ways. A rep's manual edit always wins.</p><span class="mono">10:15 · CRM updated</span></li>
+        </ol>
+        <p class="fivesteps__note">Records are illustrative.</p>
+      </div>
+    </section>
+
+    <!-- 6 · How we work and company -->
+    <section class="sec sec--ink" id="how" data-nav="dark" data-widen>
+      <div class="wrap">
+        <h2 class="h2" data-split>We start on one workflow, <em>test it on your data, then connect it.</em></h2>
+        <p class="lead" data-rise>The same four steps whichever service an engagement starts with.</p>
+        <ol class="steps steps--four">
+          <li data-rise><span class="mono">01</span><h3>Understand</h3><p>We map the site, the team and the workflow, and what connects to what.</p><dl><div><dt>You give</dt><dd>Access to the site, the team and the workflow.</dd></div><div><dt>You get</dt><dd>A map of what connects to what.</dd></div></dl></li>
+          <li data-rise><span class="mono">02</span><h3>Define</h3><p>We pick one area to start, agree what good looks like and who reviews what.</p><dl><div><dt>You give</dt><dd>Which area comes first, and who reviews what.</dd></div><div><dt>You get</dt><dd>One starting area, with what good looks like agreed.</dd></div></dl></li>
+          <li data-rise><span class="mono">03</span><h3>Evaluate</h3><p>We test on your own data and conversations before anything goes live, and agree the limits.</p><dl><div><dt>You give</dt><dd>Your own data and conversations.</dd></div><div><dt>You get</dt><dd>A test on that data, and agreed limits.</dd></div></dl></li>
+          <li data-rise><span class="mono">04</span><h3>Integrate</h3><p>We connect it to your systems in stages. People approve the steps that matter.</p><dl><div><dt>You give</dt><dd>Your approval at each step that matters.</dd></div><div><dt>You get</dt><dd>A connection to your systems, in stages.</dd></div></dl></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="sec" id="company" data-nav="light">
+      <div class="wrap company">
+        <div>
+          <h2 class="h2" data-split>AI for plants, sites and <em>customer conversations.</em></h2>
+          <p class="lead" data-rise>We work from the area or workflow you point at, and we say plainly what the system can and cannot do.</p>
+          <a class="btn btn--dark" href="demo.html" data-rise>Talk to us <svg width="16" height="16" aria-hidden="true"><use href="#arrow"/></svg></a>
+        </div>
+        <dl class="facts">
+          <div data-rise><dt>Runs on</dt><dd>On site, in the cloud or hybrid, depending on your network and data rules.</dd></div>
+          <div data-rise><dt>Connects to</dt><dd>IP cameras and NVRs, equipment sensors, your CRM, and email, SMS, WhatsApp and voice.</dd></div>
+          <div data-rise><dt>Decides</dt><dd>Your team: which alerts matter, which actions need approval and when a person takes over.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- 7 · Security -->
+    <section class="sec" id="trust" data-nav="light">
+      <div class="wrap trust">
+        <figure class="clip"><img data-settle src="../assets/img/pages/security.webp" alt="Server racks in a data centre" loading="lazy"></figure>
+        <div>
+          <h2 class="h2" data-split>What is in place, and <em>what your reviewers get under NDA.</em></h2>
+          <p class="lead" data-rise>We share our security documentation under NDA as part of every enterprise evaluation.</p>
+          <dl class="facts"><div data-rise><dt>Tenant isolation</dt><dd>Each customer workspace is logically separated, with its own access policies.</dd></div><div data-rise><dt>Roles and audit log</dt><dd>Role-based access for admins, managers and reps. Every agent action is logged and traceable.</dd></div><div data-rise><dt>Written hand-off rules</dt><dd>Your team sets when an agent stops. Each hand-off is logged with the rule that allowed it.</dd></div><div data-rise><dt>CRM edits</dt><dd>A rep's manual edit always wins over an agent.</dd></div><div data-rise><dt>On-site processing</dt><dd>For the industrial services, processing can run on site, in the cloud or hybrid, so video and sensor data can stay on site.</dd></div></dl>
+          <a class="link" href="security.html#request" data-rise>Full answers in the NDA security pack <svg width="16" height="16" aria-hidden="true"><use href="#arrow"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 9 · FAQ -->
+    <section class="sec sec--line" id="faq" data-nav="light">
+      <div class="wrap faq">
+        <div>
+          <h2 class="h2 h2--sm" data-split>What are applyd.ai AI agents, and <em>where does a person step in?</em></h2>
+          <p class="lead" data-rise>They are software agents that handle inbound conversations, sales and service: enquiries, bookings, orders, claims and renewals. They answer, qualify, follow up by email, SMS, WhatsApp and voice, and book meetings. Written hand-off rules decide when a person takes over, and the CRM is updated throughout.</p>
+          <a class="link" href="faq.html" data-rise style="margin-top:20px">All questions <svg width="16" height="16" aria-hidden="true"><use href="#arrow"/></svg></a>
+        </div>
+        <div class="faq__list" data-rise>
+          <details><summary>Does this replace our SDR team?</summary><p>No. The agents handle first responses and routine follow-up. Your reps get qualified conversations with a written brief, and they take over at the points you choose.</p></details>
+          <details><summary>Is this only for sales leads?</summary><p>No. The same agents handle sales enquiries and the service work around them: bookings, order questions, claims and renewals. The same five stages apply, and the same written hand-off rules decide when a person takes over, on every channel.</p></details>
+          <details><summary>Can we control what the agents say?</summary><p>Yes. You approve the message library, list topics the agents must hand to a person, and choose which steps need approval before anything is sent.</p></details>
+          <details><summary>What happens when a lead asks about pricing?</summary><p>The agent does not quote or negotiate. Pricing and contract questions are routed to the account owner with the conversation so far.</p></details>
+          <details><summary>Do agents overwrite CRM edits?</summary><p>No. A rep's manual edit always wins. If an agent's change conflicts with one, it flags the conflict and never overwrites the rep's change.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10 · Demo -->
+    <section class="sec sec--ink" id="demo" data-nav="dark">
+      <div class="wrap demo">
+        <div>
+          <h2 class="h2" data-split>See it on <em>your own data</em></h2>
+          <p class="lead" data-rise>Pick the service you want to see. The demo runs on your own systems and data, not a generic script.</p>
+          <ul class="ticks">
+            <li data-rise>A 30-minute call with our team on the service you pick</li>
+            <li data-rise>A walkthrough mapped to your own systems and data</li>
+            <li data-rise>A written pilot proposal if it's a fit</li>
+          </ul>
+          <figure class="clip clip--demo"><img data-settle src="../assets/img/demo-video-call.webp" alt="A salesperson on a video call at his laptop" loading="lazy"></figure>
+          <p class="demo__note" data-rise>Pilots run on a share of your real data or conversations and are measured against your current process before any wider rollout.</p>
+          <p class="demo__note" data-rise>Your security team can ask for documents under NDA. <a href="security.html#request">Request the security pack</a>.</p>
+        </div>
+        <form class="form" data-beam novalidate>
+          <h3>Book a demo</h3>
+          <fieldset class="form__services">
+            <legend>What do you want to see?</legend>
+            <div class="form__chips"><label><input type="radio" name="service" value="Physical AI"><span>Physical AI</span></label><label><input type="radio" name="service" value="Video AI"><span>Video AI</span></label><label><input type="radio" name="service" value="AI Agents"><span>AI Agents</span></label><label><input type="radio" name="service" value="OT Security"><span>OT Security</span></label><label><input type="radio" name="service" value="AI Development"><span>AI Development</span></label><label><input type="radio" name="service" value="Not sure yet"><span>Not sure yet</span></label></div>
+          </fieldset>
+          <label>Full name <input name="name" autocomplete="name" required></label>
+          <div class="form__two">
+            <label>Work email <input name="email" type="email" autocomplete="email" required></label>
+            <label>Company <input name="company" autocomplete="organization" required></label>
+          </div>
+          <label>What should we look at first? (optional) <textarea name="message" rows="3" placeholder="Choose a service above and we will tailor the call to it."></textarea></label>
+          <button class="btn btn--light" data-shimmer type="submit">Book a demo <svg width="16" height="16" aria-hidden="true"><use href="#arrow"/></svg></button>
+          <p class="form__msg" role="status"></p>
+          <p class="form__privacy"><a href="privacy.html">Privacy policy</a></p>
+        </form>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="foot" data-nav="dark">
+  <div class="wrap">
+    <div class="foot__row"><a class="nav__logo" href="#top" aria-label="applyd.ai home"><img src="../assets/logo.svg" alt="" width="28" height="28"><span>pplyd.ai</span></a><p>AI for plants, cameras, control networks and inbound conversations, with people in charge of every decision that matters.</p></div>
+    <div class="foot__cols"><div><h2>Product</h2><ul><li><a href="how-it-works.html">How it works</a></li><li><a href="platform.html">Platform</a></li><li><a href="pilot-fit.html">Pilot fit check</a></li><li><a href="faq.html">FAQ</a></li></ul></div><div><h2>Industries</h2><ul><li><a href="industries.html">All industries</a></li><li><a href="industries-saas.html">SaaS</a></li><li><a href="industries-financial-services.html">Financial services</a></li><li><a href="industries-insurance.html">Insurance</a></li><li><a href="industries-healthcare.html">Healthcare</a></li><li><a href="industries-real-estate.html">Real estate</a></li><li><a href="industries-legal.html">Legal</a></li></ul></div><div><h2>Video AI and Industrial</h2><ul><li><a href="ai-video-ai.html">Video AI</a></li><li><a href="ai-physical-ai.html">Physical AI</a></li><li><a href="industrial.html">Industrial applications</a></li><li><a href="ai-ot-cybersecurity.html">OT cybersecurity</a></li></ul></div><div><h2>AI services</h2><ul><li><a href="ai.html">AI development</a></li><li><a href="ai-agent-development.html">AI agent development</a></li><li><a href="ai-generative-ai.html">Generative AI development</a></li><li><a href="ai-llm-integration.html">LLM integration and RAG</a></li><li><a href="ai-chatbots.html">AI chatbot development</a></li><li><a href="ai-consulting.html">AI consulting</a></li></ul></div><div><h2>Resources</h2><ul><li><a href="resources.html">All resources</a></li><li><a href="resources-speed-to-lead.html">Speed to lead</a></li><li><a href="resources-handoff-rules.html">How to write hand-off rules for AI agents</a></li><li><a href="resources-evaluating-ai-sdr-vendors.html">Evaluating AI SDR vendors</a></li></ul></div><div><h2>Trust and contact</h2><ul><li><a href="security.html">Security</a></li><li><a href="security.html#request">Request security documents</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="cookies.html">Cookies</a></li><li><a href="terms.html">Terms</a></li><li><a href="ai.html">Start an AI project</a></li><li><a href="mailto:contact@applyd.ai">contact@applyd.ai</a></li></ul></div></div>
+    <p class="foot__legal">APPLYD AI LTD, registered in England and Wales. Registered office: 8 Furzegate, Rochdale, England, OL16 4RP.</p>
+    <p class="foot__credits">Photos: ThisIsEngineering, George Milton, cottonbro studio, Anna Shvets, Mart Production, Alfredo Lau-Tam, Brett Sayles, Pavel Danilyuk, Ketut Subiyanto, Yan Krukov, Yan Krukau, Ron Lach, Mikhail Nilov, SHVETS production, RDNE Stock project, Kateryna Babaieva, FCL by Photofabianni.com, Elements Interactive, Dimas Rachmadan and Shameer Vayalakkad on <a href="https://www.pexels.com/license/">Pexels</a>. Videos: shalender kumar and Erkan Avanoğlu on Pexels. Photos: rawkkim, Marcelo Cidrack, Kaede Nakamura, Omid Armin, Vitaly Gariev (LinkedIn Sales Solutions), Ritchie Anderson, Wasif Ali, Christian Harb, Bernd Dittrich, Martha Dominguez de Gouveia, Siwawut Phoophinyo, ThisisEngineering, Julien Daga, Sam Moghadam, Leo Gilgamesh, Phillip Flores, Lyubomyr Reverchuk, Michał Jakubowski, Kirill Sh, Neon Wang afinisgroup, Ari Sha, BaljkanN4 and Annika Wischnewsky on <a href="https://unsplash.com/license">Unsplash</a>.</p>
+  </div>
+</footer>
+
+<script src="../vendor/gsap.min.js" defer></script>
+<script src="../vendor/ScrollTrigger.min.js" defer></script>
+<script src="../vendor/SplitText.min.js" defer></script>
+<script src="../vendor/lenis.min.js" defer></script>
+<script src="main.js" defer></script>
+<script src="magic.js" defer></script>
+</body>
+</html>
